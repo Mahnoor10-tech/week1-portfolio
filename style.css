@@ -1,0 +1,326 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+.header {
+    background-color: #1f2937;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 18px;
+}
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    margin-top: 25px;
+    padding: 15px;
+
+    background-color: #111827;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.section {
+    padding: 70px 0;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 35px;
+    color: #1f2937;
+}
+
+
+
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    background-color: white;
+    padding: 30px;
+
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+.about-content img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+
+
+
+
+.skills-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+
+
+.projects-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+
+
+.card {
+    width: 100%;
+
+    background-color: rgb(142, 114, 114);
+
+    border: 1px solid #ddd;
+    border-radius: 12px;
+
+    padding: 25px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #85a7f1;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+.card a {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+
+
+
+.contact-form {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    background-color: rgb(209, 29, 29);
+
+    padding: 30px;
+
+    border: 1px solid #ddd;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color:red;
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #bbb;
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 12px 25px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #1d4ed8;
+}
+
+
+
+
+.footer {
+    background-color: #1f2937;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+
+
+@media (max-width: 992px) {
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header h1 {
+        font-size: 36px;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+}
+
+
+
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .header {
+        padding: 20px 0;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .navbar {
+        padding: 12px;
+    }
+
+    .about-content img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .section h2 {
+        font-size: 27px;
+    }
+}
