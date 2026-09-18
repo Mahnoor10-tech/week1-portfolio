@@ -1,9 +1,9 @@
-
+/* =========================
+   GENERAL STYLES
+========================= */
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 html {
@@ -11,316 +11,342 @@ html {
 }
 
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
-    color: #222;
+    color: #333;
+    line-height: 1.6;
 }
 
 
+/* =========================
+   HEADER
+========================= */
 
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-
-
-
-.header {
-    background-color: #1f2937;
-    color: white;
-    padding: 30px 0;
+header {
     text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 50px 20px;
 }
 
-.header h1 {
-    font-size: 42px;
-    margin-bottom: 5px;
+header h1 {
+    margin: 0;
+    font-size: 40px;
 }
 
-.header p {
+header p {
+    margin-top: 10px;
     font-size: 18px;
 }
 
 
+/* =========================
+   NAVIGATION BAR
+========================= */
 
-
-.navbar {
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
-
-    margin-top: 25px;
-    padding: 15px;
-
-    background-color: #111827;
+    background-color: #333;
+    padding: 15px 20px;
 }
 
-.navbar a {
+nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
 }
 
-.navbar a:hover {
-    text-decoration: underline;
-}
-
-
-
-
-.section {
-    padding: 70px 0;
-}
-
-.section h2 {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 35px;
-    color: #1f2937;
+nav a:hover {
+    background-color: #555;
 }
 
 
+/* =========================
+   MAIN CONTENT
+========================= */
 
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
 
-.about-content {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-
+section {
     background-color: white;
     padding: 30px;
-
-    border: 1px solid #ddd;
-    border-radius: 12px;
+    margin-bottom: 30px;
+    border-radius: 10px;
 }
 
-.about-content img {
+
+/* =========================
+   HEADINGS
+========================= */
+
+h2 {
+    margin-top: 0;
+    font-size: 30px;
+    color: #222;
+}
+
+h3 {
+    color: #333;
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about {
+    text-align: center;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.profile-image {
+    display: block;
     width: 200px;
     height: 200px;
     object-fit: cover;
-
+    margin: 20px auto;
     border-radius: 50%;
 }
 
-.about-content p {
-    margin-bottom: 15px;
-}
 
+/* =========================
+   HOBBIES
+========================= */
 
-
-
-.skills-grid {
+.hobbies {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
-    gap: 25px;
+    gap: 20px;
 }
 
-
-
-
-.projects-grid {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 25px;
-}
-
-
-
-
-.card {
-    width: 100%;
-
-    background-color: rgb(142, 114, 114);
-
+.hobby-card {
+    background-color: #fafafa;
     border: 1px solid #ddd;
-    border-radius: 12px;
-
-    padding: 25px;
-
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-
-    transition: transform 0.2s;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
 }
 
-.card:hover {
+
+/* =========================
+   PROJECTS PAGE
+========================= */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
     transform: translateY(-5px);
 }
 
-.card h3 {
-    color: #85a7f1;
-    margin-bottom: 10px;
-}
-
-.card p {
-    margin-bottom: 15px;
-}
-
-.card a {
-    color: #2563eb;
-    font-weight: bold;
+.project-card h3 {
+    margin-top: 0;
 }
 
 
+/* =========================
+   PROJECT BUTTON
+========================= */
 
-
-.contact-form {
-    max-width: 700px;
-
-    margin: 0 auto;
-
-    background-color: rgb(209, 29, 29);
-
-    padding: 30px;
-
-    border: 1px solid #ddd;
-    border-radius: 12px;
-
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-}
-
-.contact-form label {
-    display: block;
-
-    margin-bottom: 7px;
-
-    font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-    background-color:red;
-    width: 100%;
-
-    padding: 12px;
-
-    margin-bottom: 20px;
-
-    border: 1px solid #bbb;
+.project-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
     border-radius: 6px;
-
-    font-size: 16px;
 }
 
-.contact-form textarea {
+.project-button:hover {
+    background-color: #555;
+}
+
+
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact {
+    text-align: center;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info p {
+    margin: 15px 0;
+}
+
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    min-height: 150px;
     resize: vertical;
 }
 
-.contact-form button {
-    padding: 12px 25px;
-
-    background-color: #2563eb;
-
+button {
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: #222;
     color: white;
-
     border: none;
     border-radius: 6px;
-
-    font-size: 16px;
-
     cursor: pointer;
 }
 
-.contact-form button:hover {
-    background-color: #1d4ed8;
+button:hover {
+    background-color: #555;
 }
 
 
+/* =========================
+   FOOTER
+========================= */
 
-
-.footer {
-    background-color: #1f2937;
-
-    color: white;
-
+footer {
     text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
 
-    padding: 25px;
+footer p {
+    margin: 0;
 }
 
 
-
-
-@media (max-width: 992px) {
-
-    .skills-grid,
-    .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .header h1 {
-        font-size: 36px;
-    }
-}
-
-
-
+/* =========================
+   TABLET RESPONSIVE
+========================= */
 
 @media (max-width: 768px) {
 
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
+    header {
+        padding: 40px 20px;
     }
 
-    .about-content {
-        flex-direction: column;
-        text-align: center;
+    header h1 {
+        font-size: 32px;
     }
 
-    .skills-grid,
-    .projects-grid {
-        grid-template-columns: 1fr;
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .section {
-        padding: 50px 0;
+    .hobbies {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
 
+@media (max-width: 600px) {
 
-@media (max-width: 480px) {
-
-    .container {
-        width: 92%;
+    header h1 {
+        font-size: 28px;
     }
 
-    .header {
-        padding: 20px 0;
-    }
-
-    .header h1 {
-        font-size: 30px;
-    }
-
-    .header p {
+    header p {
         font-size: 16px;
     }
 
-    .navbar {
-        padding: 12px;
+    nav {
+        flex-direction: column;
+        gap: 8px;
     }
 
-    .about-content img {
-        width: 150px;
-        height: 150px;
+    nav a {
+        width: 100%;
+        text-align: center;
     }
 
-    .card {
+    main {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    section {
         padding: 20px;
     }
 
-    .section h2 {
-        font-size: 27px;
+    h2 {
+        font-size: 25px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hobbies {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-image {
+        width: 160px;
+        height: 160px;
     }
 }
