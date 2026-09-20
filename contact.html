@@ -1,82 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-
-    <!-- Day 4: Responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact Me</title>
+    <title>Contact Me | Mahnoor Fatima</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Header -->
     <header class="header">
+
         <div class="container">
 
             <h1>Contact Me</h1>
-            <p>Let's get in touch</p>
 
-            <nav class="navbar">
-                <a href="index.html">About</a>
-                <a href="index.html#skills">Skills</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+            <p>Let's connect and talk</p>
 
         </div>
+
     </header>
 
 
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="index.html">Home</a>
+
+            <a href="projects.html">Projects</a>
+
+            <a href="contact.html" class="active">Contact</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Main -->
     <main>
 
         <section class="section">
 
             <div class="container">
 
-                <h2>Send Me a Message</h2>
+                <div class="section-heading">
 
-                <form class="contact-form">
+                    <span class="section-tag">GET IN TOUCH</span>
 
-                    <label for="name">Name</label>
+                    <h2>Send Me a Message</h2>
 
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Your name"
-                        required
-                    >
+                    <p>
+                        If you would like to contact me,
+                        feel free to send a message.
+                    </p>
 
-
-                    <label for="email">Email</label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Your email"
-                        required
-                    >
+                </div>
 
 
-                    <label for="message">Message</label>
+                <div class="contact-card">
 
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="7"
-                        placeholder="Your message"
-                    ></textarea>
+                    <form class="contact-form">
+
+                        <!-- Name -->
+                        <div class="form-group">
+
+                            <label for="name">
+                                Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                required
+                            >
+
+                        </div>
 
 
-                    <button type="submit">
-                        Submit
-                    </button>
+                        <!-- Email -->
+                        <div class="form-group">
 
-                </form>
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Message -->
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="7"
+                                placeholder="Write your message..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- Submit -->
+                        <button type="submit" class="submit-button">
+                            Send Message
+                        </button>
+
+                    </form>
+
+                </div>
 
             </div>
 
@@ -85,9 +137,19 @@
     </main>
 
 
+    <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2026 Your Name. All rights reserved.</p>
+
+        <div class="container">
+
+            <p>
+                &copy; 2026 Mahnoor Fatima. All rights reserved.
+            </p>
+
+        </div>
+
     </footer>
 
 </body>
+
 </html>
